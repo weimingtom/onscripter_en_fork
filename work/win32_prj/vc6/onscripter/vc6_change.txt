@@ -1,0 +1,45 @@
+1. include
+..\..\..\extlib\src\bzip2-1.0.4,
+..\..\..\extlib\src\freetype-2.3.5\include,
+..\..\..\extlib\src\jpeg-6b,
+..\jpeg,
+..\..\..\extlib\src\libogg-1.1.3\include,
+..\..\..\extlib\src\libpng-1.2.24,
+..\..\..\extlib\src\libvorbis-1.2.0\include,
+..\..\..\extlib\src\SDL-1.2.13\include,
+..\..\..\extlib\src\SDL_image-1.2.6,
+..\..\..\extlib\src\SDL_mixer-1.2.8,
+..\..\..\extlib\src\SDL_ttf-2.0.8,
+..\..\..\extlib\src\smpeg,
+..\..\..\extlib\src\zlib-1.2.3
+..\SDL
+
+..\..\..\extlib\src\bzip2-1.0.4,..\..\..\extlib\src\freetype-2.3.5\include,..\..\..\extlib\src\jpeg-6b,..\jpeg,..\..\..\extlib\src\libogg-1.1.3\include,..\..\..\extlib\src\libpng-1.2.24,..\..\..\extlib\src\libvorbis-1.2.0\include,..\..\..\extlib\src\SDL-1.2.13\include,..\..\..\extlib\src\SDL_image-1.2.6,..\..\..\extlib\src\SDL_mixer-1.2.8,..\..\..\extlib\src\SDL_ttf-2.0.8,..\..\..\extlib\src\smpeg,..\..\..\extlib\src\zlib-1.2.3,..\SDL
+
+2. lib
+full set:
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib dxguid.lib
+small set:
+winmm.lib dxguid.lib user32.lib gdi32.lib advapi32.lib
+
+
+3. default.ttf
+see 
+http://svn.unclemion.com/repo/onscripter/libraries/fonts/
+http://svn.unclemion.com/repo/onscripter/libraries/fonts/README
+must rename to default.ttf
+
+4. output
+see
+C:\Documents and Settings\Administrator\Application Data\ONScripter-EN
+
+
+-------------------
+
+FontInfo.obj : error LNK2001: unresolved external symbol _TTF_OpenFont
+ONScripterLabel.obj : error LNK2001: unresolved external symbol _TTF_Init
+ONScripterLabel.obj : error LNK2001: unresolved external symbol _TTF_GlyphMetrics
+ONScripterLabel_text.obj : error LNK2001: unresolved external symbol _TTF_GlyphMetrics
+ONScripterLabel_text.obj : error LNK2001: unresolved external symbol _TTF_RenderGlyph_Shaded
+ONScripterLabel_text.obj : error LNK2001: unresolved external symbol _TTF_FontAscent
+
